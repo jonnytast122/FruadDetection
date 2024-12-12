@@ -5,10 +5,10 @@ import numpy as np
 
 # Load the model and label encoder
 
-with open("xgb_best_model_2.pkl", 'rb') as model_file:
+with open("models/xgb_best_model_2.pkl", 'rb') as model_file:
     model = pickle.load(model_file)
 
-with open("label_encoder_2.pkl", 'rb') as encoder_file:
+with open("models/label_encoder_2.pkl", 'rb') as encoder_file:
     label_encoder = pickle.load(encoder_file)
 
 # Define required columns for batch predictions
